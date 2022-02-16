@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header styles */
+header {
+    padding: 20px 35px;
+    background-color: black;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: white;
+    margin: 0;
+    display: inline;
+}
+
+header a {
+    color: white;
+}
+
+header nav {
+    float: right;
+    margin: 7px 0;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 22px;
+}
+
+.container {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    width: 100%;
+}
+
+.projects {
+    flex: 1 70%;
+    margin: 20px;
+    color: white;
+    width: 100%;
+    opacity: 0.7;
+}
+
+footer {
+    background: white;
+    width: 100%;
+    padding: 40px 35px;
+}
+
+footer h2 {
+    display: inline;
+    color: white;
+    font-size: 30px;
+    margin: 0;
+}
+
+footer div {
+    float: right;
+    line-height: 1.5;
+    text-align: center;
+    color: black;
+}
+
+/* Hero Style Start */
+.hero {
+}
+
+/* Contaact Section Styles Start */
+.contact {
+    text-align: center;
+    background: black;
+}
+
+.contact h2 {
+    color: white;
+}
