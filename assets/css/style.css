@@ -1,94 +1,95 @@
+/* main style */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
+  color: #d9dcd6;
+  margin-left: 20px;
 }
 
-/* header styles */
+.float-left {
+  float: left;
+  margin-right: 25px;
+}
+
+.float-right {
+  float: right;
+  margin-left: 25px;
+}
+
+/* header and navigation style */
 header {
-    padding: 20px 35px;
-    background-color: black;
+  padding: 20px;
+  font-family:Arial, Helvetica, sans-serif;
+  background-color: black;
+  color: #024e76;
 }
 
 header h1 {
-    font-weight: bold;
-    font-size: 36px;
-    color: white;
-    margin: 0;
-    display: inline;
+  font-size: 40px;
+  display: inline-block;
 }
 
 header a {
-    color: white;
+  color: #BBF8F9;
 }
 
 header nav {
-    float: right;
-    margin: 7px 0;
+  float: right;
+  margin: 7px 0;
 }
 
 header nav ul li {
-    display: inline;
+  display: inline;
 }
 
 header nav ul li a {
-    margin: 0 30px;
-    font-weight: lighter;
-    font-size: 22px;
+  margin: 0 30px;
+  font-weight: lighter;
+  font-size: 22px;
 }
 
-.container {
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    background: black;
-    width: 100%;
-}
-
-.projects {
-    flex: 1 70%;
-    margin: 20px;
-    color: white;
-    width: 100%;
-    opacity: 0.7;
-}
-
-footer {
-    background: white;
-    width: 100%;
-    padding: 40px 35px;
-}
-
-footer h2 {
-    display: inline;
-    color: white;
-    font-size: 30px;
-    margin: 0;
-}
-
-footer div {
-    float: right;
-    line-height: 1.5;
-    text-align: center;
-    color: black;
-}
-
-/* Hero Style Start */
 .hero {
+  background-image: url("../images/scenery.jpg");
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-/* Contaact Section Styles Start */
-.contact {
-    text-align: center;
-    background: black;
+.body-section h2 {
+  border-right: 2px solid #024e76;
+  width: 25%;
+  text-align: center;
+  flex-shrink: 0;
+  color: #024e76;
 }
 
-.contact h2 {
-    color: white;
+.body-section {
+  display: flex;
+  margin-top: 15px;
 }
+
+.body-section img {
+    height: 200px;
+}
+
+.body-section div {
+    margin-left: 15px;
+    color: #024e76;
+}
+
+/* footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
