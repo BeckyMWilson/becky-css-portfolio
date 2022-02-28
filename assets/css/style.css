@@ -3,11 +3,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 body {
   color: #d9dcd6;
   margin-left: 20px;
+  margin-right: 20px;
 }
 
 .float-left {
@@ -23,18 +26,19 @@ body {
 /* header and navigation style */
 header {
   padding: 20px;
-  font-family:Arial, Helvetica, sans-serif;
-  background-color: black;
+  background-color: #444646;
   color: #024e76;
 }
 
 header h1 {
   font-size: 40px;
   display: inline-block;
+  background-color: #bbf8f9;
+  color: #444646;
 }
 
 header a {
-  color: #BBF8F9;
+  color: #bbf8f9;
 }
 
 header nav {
@@ -74,12 +78,50 @@ header nav ul li a {
 }
 
 .body-section img {
-    height: 200px;
+  height: 200px;
 }
 
 .body-section div {
-    margin-left: 15px;
-    color: #024e76;
+  margin-left: 15px;
+  color: #024e76;
+}
+
+.column {
+  display: flex;
+  flex-basis: calc(50% -1em);
+  min-height: 150px;
+  min-width: 150px;
+}
+
+.column > a {
+  text-decoration: none;
+}
+
+.column:first-child {
+  flex-basis: 100%;
+  max-width: 80%;
+}
+.project1 {
+  background-image: url("../images/Screenshot1_HoriseonProject.png");
+}
+.project2 {
+  background-image: url("../images/septomeme.png");
+
+.project3 {
+  background-image: url("../images/") ;
+}
+
+.project-desc {
+  background-color: #bbf8f9;
+  color: #444646;
+  padding: 10px;
+  margin-top: 120px;
+  margin-left: 0px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* footer {
