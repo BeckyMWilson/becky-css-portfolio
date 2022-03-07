@@ -9,8 +9,8 @@
 
 body {
   color: #d9dcd6;
-  margin-left: 20px;
-  margin-right: 20px;
+  /* margin-left: 20px;
+  margin-right: 20px; */
 }
 
 .float-left {
@@ -25,7 +25,7 @@ body {
 
 /* header and navigation style */
 header {
-  padding: 20px;
+  padding: 20px 0 20px 0;
   background-color: #444646;
   color: #024e76;
 }
@@ -33,15 +33,17 @@ header {
 header h1 {
   font-size: 40px;
   display: inline-block;
-  background-color: #bbf8f9;
+  background-color: #afe9e9;
   color: #444646;
+  padding: 0 10px 0 50px;
 }
 
 header a {
-  color: #bbf8f9;
+  color: #afe9e9;
 }
 
 header nav {
+  margin-right: 20px;
   float: right;
   margin: 7px 0;
 }
@@ -56,6 +58,7 @@ header nav ul li a {
   font-size: 22px;
 }
 
+/* hero style */
 .hero {
   background-image: url("../images/scenery.jpg");
   height: 200px;
@@ -64,17 +67,31 @@ header nav ul li a {
   background-position: center;
 }
 
+.hero h2 {
+  font-size: 25px;
+  text-align: right;
+  background-color: #afe9e9;
+  color: #444646;
+  padding: 5px;
+  float: right;
+  /* width: 45%; */
+  margin-top: 9%;
+  margin-right: 5%;
+}
+
 .body-section h2 {
   border-right: 2px solid #024e76;
-  width: 25%;
-  text-align: center;
+  width: 200px;
+  text-align: right;
   flex-shrink: 0;
   color: #024e76;
+  font-size: 35px;
+  padding-right: 15px;
 }
 
 .body-section {
   display: flex;
-  margin-top: 15px;
+  margin: 30px;
 }
 
 .body-section img {
@@ -82,7 +99,8 @@ header nav ul li a {
 }
 
 .body-section div {
-  margin-left: 15px;
+  /* margin-left: 15px; */
+  padding: 0 25px 25px 25px;
   color: #024e76;
 }
 
@@ -90,38 +108,68 @@ header nav ul li a {
   display: flex;
   flex-basis: calc(50% -1em);
   min-height: 150px;
-  min-width: 150px;
+  min-width: 550px;
+  border: 5px solid #afe9e9;
+  margin-bottom: 10px;
+  margin-right: 10px;
 }
 
 .column > a {
   text-decoration: none;
+  margin-top: 35%;
+  margin-left: -25px;
 }
 
 .column:first-child {
-  flex-basis: 100%;
-  max-width: 80%;
+  flex-basis: 92%;
+  max-width: 100%;
+  min-height: 500px;
 }
+
 .project1 {
-  background-image: url("../images/Screenshot1_HoriseonProject.png");
+  background-image: url("../images/run-buddy.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
 .project2 {
   background-image: url("../images/septomeme.png");
+  max-width: 45%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 .project3 {
-  background-image: url("../images/") ;
+  background-image: url("../images/Screenshot1_HoriseonProject.png");
+  max-width: 45%;
+  border-color: #afe9e9;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .project-desc {
-  background-color: #bbf8f9;
+  background-color: #afe9e9;
   color: #444646;
-  padding: 10px;
-  margin-top: 120px;
-  margin-left: 0px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 10px;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
+  flex-basis: 100%;
+  overflow: auto;
+}
+
+.contact {
+  /* display: inline; */
+  /* flex: auto; */
+  /* float: right; */
+  color: #024e76;
+  justify-content: center;
+  text-align: center;
 }
 
 /* footer {
