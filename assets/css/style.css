@@ -1,16 +1,9 @@
 /* main style */
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-}
-
-body {
-  color: #d9dcd6;
-  /* margin-left: 20px;
-  margin-right: 20px; */
 }
 
 .float-left {
@@ -56,6 +49,7 @@ header nav ul li a {
   margin: 0 30px;
   font-weight: lighter;
   font-size: 22px;
+  text-decoration-thickness: 3px;
 }
 
 /* hero style */
@@ -74,7 +68,6 @@ header nav ul li a {
   color: #444646;
   padding: 5px;
   float: right;
-  /* width: 45%; */
   margin-top: 9%;
   margin-right: 5%;
 }
@@ -92,6 +85,7 @@ header nav ul li a {
 .body-section {
   display: flex;
   margin: 30px;
+  column-gap: 25px;
 }
 
 .body-section img {
@@ -99,87 +93,121 @@ header nav ul li a {
 }
 
 .body-section div {
-  /* margin-left: 15px; */
-  padding: 0 25px 25px 25px;
   color: #024e76;
+}
+
+.p {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .column {
   display: flex;
-  flex-basis: calc(50% -1em);
   min-height: 150px;
   min-width: 550px;
-  border: 5px solid #afe9e9;
   margin-bottom: 10px;
   margin-right: 10px;
 }
 
-.column > a {
-  text-decoration: none;
-  margin-top: 35%;
-  margin-left: -25px;
+.row {
+  display: flex;
+  row-gap: 10px;
+  column-gap: 10px;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-.column:first-child {
-  flex-basis: 92%;
-  max-width: 100%;
-  min-height: 500px;
+a:hover {
+  color: antiquewhite;
 }
 
+.card-header,
+.card-footer {
+  background-color: #afe9e9;
+  padding: 5px 5px 5px 5px;
+}
+
+.card-container#first-card {
+  flex-basis: 95%;
+}
+
+.card-container {
+  flex-basis: 47%;
+}
+
+.card-container:hover {
+  opacity: 0.6;
+}
 .project1 {
   background-image: url("../images/run-buddy.png");
+  min-height: 300px;
   background-size: cover;
-  background-repeat: no-repeat;
+  flex-basis: 92%;
+  border: 5px solid #afe9e9;
 }
 
 .project2 {
   background-image: url("../images/septomeme.png");
-  max-width: 45%;
+  min-height: 125px;
   background-size: cover;
-  background-repeat: no-repeat;
+  width: 100%;
+  flex-basis: 50%;
+  border: 5px solid #afe9e9;
 }
 
 .project3 {
   background-image: url("../images/Screenshot1_HoriseonProject.png");
-  max-width: 45%;
-  border-color: #afe9e9;
+  min-height: 125px;
   background-size: cover;
+  width: 100%;
+  flex-basis: 50%;
+  border: 5px solid #afe9e9;
+}
+
+.futureProject {
+  background-image: url("../images/futureproject_background.png");
+  min-height: 125px;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  width: 100%;
+  flex-basis: 50%;
+  border: 5px solid #afe9e9;
 }
 
-.project-desc {
-  background-color: #afe9e9;
-  color: #444646;
-  padding: 20px;
-  text-align: center;
-  position: relative;
-  bottom: 10px;
+.future h3 {
+  font: 20px;
+  color: #afe9e9;
 }
 
-.row {
+/* Contact Style Begin */
+.contact {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: 100%;
-  overflow: auto;
+  justify-content: space-between;
 }
 
-.contact {
-  /* display: inline; */
-  /* flex: auto; */
-  /* float: right; */
-  color: #024e76;
-  justify-content: center;
-  text-align: center;
-}
-
-/* footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: black;
-  color: white;
-  height: 50px;
+.contact ul {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-} */
+  list-style: none;
+}
+
+.contact ul li {
+  padding: 30px 25px 25px 25px;
+}
+
+.contact ul li a {
+  text-decoration: none;
+  color: #444646;
+  border-bottom: solid #444646 3px;
+  font-size: 20px;
+}
+
+.contact ul li a:hover {
+  color: white;
+  background-color: blue;
+  padding: 10px;
+}
