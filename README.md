@@ -14,6 +14,5 @@ https://github.com/BeckyMWilson/becky-css-portfolio.git
 
 ## Screenshots:
 
-
 ### Owner:
 Becky Wilson
