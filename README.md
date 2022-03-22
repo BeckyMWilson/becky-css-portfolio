@@ -1,4 +1,4 @@
-# becky-css-portfolio
+# becky-css-portfolio:
 CSS portfolio assignment 
 
 ## Technologies Used:
@@ -12,8 +12,8 @@ https://beckymwilson.github.io/becky-css-portfolio/
 https://github.com/BeckyMWilson/becky-css-portfolio.git
 
 
-## Screenshot
+## Screenshots:
 
 
-### Owner
+### Owner:
 Becky Wilson
