@@ -31,6 +31,13 @@ header h1 {
   padding: 0 10px 0 50px;
 }
 
+.avatar {
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
+
 header a {
   color: #afe9e9;
 }
