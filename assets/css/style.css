@@ -153,7 +153,7 @@ a:hover {
 }
 
 .project2 {
-  background-image: url("../images/septomeme.png");
+  background-image: url("../images/Password-Generator.png");
   min-height: 125px;
   background-size: cover;
   width: 100%;
@@ -162,7 +162,7 @@ a:hover {
 }
 
 .project3 {
-  background-image: url("../images/run-buddy.png");
+  background-image: url("../images/septomeme.png");
   min-height: 125px;
   background-size: cover;
   width: 100%;
@@ -171,6 +171,15 @@ a:hover {
 }
 
 .project4 {
+  background-image: url("../images/run-buddy.png");
+  min-height: 125px;
+  background-size: cover;
+  width: 100%;
+  flex-basis: 50%;
+  border: 5px solid #afe9e9;
+}
+
+.project5 {
   background-image: url("../images/Screenshot1_HoriseonProject.png");
   min-height: 125px;
   background-size: cover;
